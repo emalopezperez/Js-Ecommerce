@@ -23,7 +23,6 @@ const imgCarrito =document.querySelector('#img-carrito')
         const productosSeleccionados = e.target.parentElement.parentElement.parentElement;
 
         leerDatos(productosSeleccionados);
-
     }
     
 });
@@ -145,3 +144,33 @@ carrito.addEventListener('click',eliminar);
 
 
 // sliders
+document.addEventListener('DOMContentLoaded', function () {
+    const swiper = new Swiper('.swiper-container', {
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 32,
+        centeredSlides: true,
+        autoplay: {
+        delay: 8000,
+        },
+        breakpoints: {
+        640: {
+            slidesPerView: 1.5,
+        },
+        1024: {
+            slidesPerView: 3,
+        },
+        },
+    })
+    })
+
+//MenuDesplegable
+
+const menu = document.querySelector('#menu');
+const btn = document.querySelector('#boton')
+
+btn.addEventListener('click', desplegarMenu)
+
+function desplegarMenu(){
+    menu.classList.toggle('hidden')
+}

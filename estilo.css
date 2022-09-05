@@ -11,15 +11,15 @@ box-sizing: border-box; }
 
 /* carrito*/
 
-
 .a{
     display: flex;
     flex-direction: column;
-    color: black;
+    color: white;
 }
 .lcarrito{
     display:flex;
-    justify-content:space-between; 
+    justify-content:space-between;
+    color: white;
 }
 
 th{
@@ -740,7 +740,7 @@ font-weight: 800;
 
 @media (max-width: 700px) {
   body{
-    background-color: #1a1a1a;
+    background-color: white;
   }
   .img-banner {
 
@@ -795,7 +795,7 @@ font-weight: 800;
 
 @media (max-width: 420px) {
   body{
-    background-color: #1a1a1a;
+    background-color: white;
   }
   .img-banner {
 
